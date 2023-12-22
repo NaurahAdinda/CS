@@ -1,0 +1,400 @@
+input {
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  padding: 4px 4px;
+  width: 15vw;
+}
+.home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+
+  width: 100%;
+  height: 100%;
+  align-items: center;
+
+  gap: 86px;
+}
+/* ======================================= typography =======================================*/
+.text-desc {
+  font: var(--primary-font);
+  color: #666666;
+}
+.title-2{
+  font: var(--primary-font);
+  color: var(--primary-color);
+  font-weight: 500;
+}
+.text-title {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 600;
+
+  font-size: 24px;
+  line-height: 120%;
+  color: #004651;
+}
+
+/* ======================================= main content - hero =======================================*/
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  gap: 24px;
+  padding: 0 72px;
+  padding-top: 160px;
+}
+.hero.container-fluid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  margin-left: 16px;
+  padding: 0px;
+  gap: 32px;
+  align-items: flex-start;
+  width: 75%;
+}
+.v-line {
+  border-left: 1px solid #717d96;
+}
+.hero-text {
+  width: auto;
+  height: 86px;
+
+  /* Heading XXL */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 120%;
+  /* or 67px */
+
+  letter-spacing: 0.01em;
+
+  background: linear-gradient(
+    90deg,
+    #2d3648 16.39%,
+    #0f6900 48.82%,
+    #a4e473 92.79%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+/* ======================================= my profile =======================================*/
+#sec-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+#sec-1 .bio {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 32px;
+  gap: 54px;
+
+  width: auto;
+  height: auto;
+
+  border-radius: 8px;
+
+  box-shadow: var(--shadow-lg);
+}
+
+/* Detail Info */
+#sec-1 .bio .detail-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+#sec-1 .bio .detail-info .fullname {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #2d3648;
+}
+#sec-1 .bio .detail-info .profession {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  color: #0f6900;
+}
+#sec-1 .bio .detail-info .hometown {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  color: #004651;
+}
+#sec-1 .bio .detail-info .self-bio {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 150%;
+  /* or 18px */
+
+  letter-spacing: -0.01em;
+
+  /* Neutrals/600 ⦿ */
+
+  color: #717d96;
+}
+
+.profile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 16px;
+  width: 15%;
+}
+
+.profile-menu a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+/* ============================================= */
+#sec-1 .bio .profile {
+  box-sizing: border-box;
+
+  width: 102px;
+  height: 101px;
+
+  background: url(.jpg), #edf0f7;
+  border: 3px solid var(--primary-color);
+  border-radius: 500px;
+}
+#sec-1 .personal-information .info-1, .personal-information-edit .info-1 {
+  display: flex;
+  flex-direction:  column;
+  gap: 4px;
+  min-width: 8vw;
+  margin-bottom: 24px;
+}
+#sec-1 .personal-information, .personal-information-edit {
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  box-shadow: var(--shadow-lg);
+
+}
+#sec-1 .personal-information .copy-1, #sec-1 .personal-information-edit .copy-1{
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--primary-color);
+
+}
+#sec-1 .personal-information .info, #sec-1 .personal-information-edit .info {
+  display: flex;
+  flex-direction:  row;
+  flex-wrap: wrap;
+  gap: 20%;
+  justify-content: start;
+  
+}
+
+
+/* ======================================= main content - my experience =======================================*/
+.sec-my-exp.container-fluid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.sec-my-exp.container-fluid .table-achievement {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  border: 1px solid #717d96;
+  border-radius: 8px;
+}
+.sec-my-exp.container-fluid .table-achievement .btn {
+  align-self: end;
+}
+
+/* ======================================= button =======================================*/
+.btn-sec.active {
+  height: fit-content;
+  color: #fff;
+  border-radius: 16px;
+  padding: 12px 32px;
+  outline: auto;
+  background: var(--primary-color);
+  align-self: center;
+  transition: all 0.2s;
+}
+
+.btn-sec.active:hover {
+  transform: scale(1.05);
+  transition: all 0.2s;
+}
+
+.btn-sec {
+  height: fit-content;
+  color: var(--primary-color);
+  border-radius: 16px;
+  padding: 4px 32px;
+  border: none;
+  outline: none;
+  background: none;
+  transition: all 0.2s;
+}
+
+.btn-sec:hover {
+  transform: scale(1.1) translate(23%, 0);
+  transition: all 0.2s;
+}
+/* ======================================= form username password login register =======================================*/
+.hero .form {
+  justify-content: start;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.hero .form .username {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#btn-login {
+  flex-direction: row;
+}
+
+.hero .form p a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.1s;
+}
+.hero .form p a:hover {
+  color: #a4e473;
+  transition: all 0.1s;
+}
+
+#nav-bg {
+  position: absolute;
+  width: 100vw;
+  height: 120px;
+  top: 0;
+  z-index: 2;
+  background: radial-gradient(
+      90.7% 2299.28% at 95.66% 47.81%,
+      #259f46 0%,
+      #c3f6d7 19.42%,
+      #c3f6d7 89.87%,
+      #a4e473 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+/* ======================================= template =======================================*/
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.form .usrpw button {
+  border: none;
+  background: none;
+}
+/* styling of whole input container */
+.form .usrpw {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+
+  --timing: 0.3s;
+  --width-of-input: 100%;
+  --height-of-input: 48px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #0f6900;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg, #fff);
+  box-shadow: var(--shadow-lg);
+}
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+/* styling of animated border */
+.form .usrpw:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+
+/* Hover on Input */
+.form .usrpw:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+/* here is code of animated border */
+.form .usrpw:focus-within:before {
+  transform: scale(1);
+}
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+/* sizing svg icons */
+/* ======================================= responsive =======================================*/

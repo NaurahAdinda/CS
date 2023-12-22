@@ -1,0 +1,19 @@
+@import url("register.css");
+
+.hero.container-fluid {
+  flex-direction: row-reverse;
+}
+
+.custom-file-input {
+  color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  padding-left: 4px;
+}
+
+/* Menghilangkan default styling tombol input file */
+.custom-file-input::-webkit-file-upload-button {
+position: absolute;
+  visibility: hidden;
+}

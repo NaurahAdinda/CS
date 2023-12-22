@@ -1,0 +1,419 @@
+.home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+    gap: 86px;
+}
+/* ======================================= typography =======================================*/
+.text-desc {
+    font: var(--primary-font);
+    color: #666666;
+}
+
+.text-title {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 800;
+
+    font-size: 56px;
+    line-height: 120%;
+    color: #004651;
+    margin: 0;
+    padding: 0;
+}
+
+/* ======================================= hero =======================================*/
+.hero.container-fluid {
+    z-index: 1;
+    margin-top: 260px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 96px;
+    gap: 72px;
+
+    width: 100vw;
+}
+
+.hero.container-fluid .image-copy-content {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.hero.container-fluid .image-copy-content .copy {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+
+.hero.container-fluid .image-copy-content img{
+width: 426px;
+}
+
+.hero.container-fluid .register-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 40%;
+}
+
+.hero-text {
+    width: 348px;
+    height: 134px;
+
+    /* Heading XXL */
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%;
+    /* or 67px */
+
+    letter-spacing: 0.01em;
+
+    background: linear-gradient(
+        90deg,
+        #2d3648 16.39%,
+        #0f6900 48.82%,
+        #a4e473 92.79%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Login Page Hero */
+.hero.container-fluid a {
+    align-self: self-start;
+}
+.hero.container-fluid .form img {
+    scale: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ======================================= button =======================================*/
+.btn-login {
+    width: 100%;
+}
+#btn-login {
+    --prim-color: #ffffff;
+    --secondary-color: var(--prim-color);
+    --hover-color: var(--primary-color);
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: var(--primary-color);
+    padding: 1em 1.8em;
+    background: var(--prim-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+a:focus {
+    outline: dotted 2px #666;
+}
+#btn-login .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-login .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--prim-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+
+#btn-login .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--primary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+#btn-login:hover {
+    background-color: var(--primary-color);
+    color: #e3ebde;
+}
+
+#btn-login:hover .arrow {
+    background: var(--secondary-color);
+}
+
+#btn-login:hover .arrow:before {
+    content: "";
+    right: 0;
+    border: 2px solid #fff;
+    border-left: 0px;
+    border-top: 0px;
+}
+
+/* ======================================= form user data =======================================*/
+.hero .form {
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.hero .form label {
+    font: var(--primary-font);
+    color: #004651;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input, select, option {
+    color: var(--primary-color);
+}
+
+::-webkit-calendar-picker-indicator{
+    background-color: var(--secondary-color);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+#btn-login {
+    flex-direction: row;
+}
+
+#btn-signin {
+    --primary-color: #0f6900;
+    --secondary-color: #fff;
+    --hover-color: #1069009c;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    box-shadow: var(--shadow-lg);
+}
+a:focus {
+    outline: dotted 2px #666;
+}
+#btn-signin .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-signin .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+
+#btn-signin .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+#btn-signin:hover {
+    background-color: var(--hover-color);
+    color: #e3ebde;
+}
+
+#btn-signin:hover .arrow {
+    background: var(--secondary-color);
+}
+
+#btn-signin:hover .arrow:before {
+    right: 0;
+}
+
+.hero .form p a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.1s;
+}
+.hero .form p a:hover {
+    color: #a4e473;
+    transition: all 0.1s;
+}
+
+#nav-bg {
+    position: absolute;
+    width: 100vw;
+    height: 120px;
+    top: 0;
+    z-index: 2;
+    background: radial-gradient(
+            90.7% 2299.28% at 95.66% 47.81%,
+            #259f46 0%,
+            #c3f6d7 19.42%,
+            #c3f6d7 89.87%,
+            #a4e473 100%
+        )
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.tac{
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.1s;
+}
+
+/* ======================================= template =======================================*/
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.form .usrpw button {
+    border: none;
+    background: none;
+}
+/* styling of whole input container */
+.form .usrpw {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+
+    --timing: 0.3s;
+    --width-of-input: 100%;
+    --height-of-input: 48px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #0f6900;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg, #fff);
+    box-shadow: var(--shadow-lg);
+}
+/* styling of Input */
+.input {
+    font-size: 12px;
+    font-weight: 500;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+}
+.input::placeholder, input[type="date"], select:disabled {
+    color: #1a1a1a5d;
+}
+input[type="date"]:valid, select:enabled{
+    color: var(--primary-color);
+}
+/* styling of animated border */
+.form .usrpw:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+}
+
+/* Hover on Input */
+.form .usrpw:focus-within {
+    border-radius: var(--after-border-radius);
+}
+
+input:focus {
+    outline: none;
+    color: #004651;
+}
+/* here is code of animated border */
+.form .usrpw:focus-within:before {
+    transform: scale(1);
+}
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+}
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+}
+/* sizing svg icons */
+/* ======================================= responsive =======================================*/

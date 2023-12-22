@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@400;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+:root {
+  --green: #a4e473;
+  --army: #004651;
+  --yellow: #cbea43;
+  --place-holder: rgba(45, 54, 72, 0.5);
+  --shadow-md: 0px 2px 4px -1px rgba(0, 0, 0, 0.06), 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0px 10px 10px -5px rgba(0, 0, 0, 0.04), 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-size: 1.2rem; /*1.2 x 16px*/
+  font-family: "Poppins";
+  color: var(--green);
+  min-height: 120vh;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 118px;
+  z-index: 1;
+}
+
+.hero::before {
+  clip-path: polygon(0 0, 100% 0%, 100% 30%, 0% 80%);
+  background: radial-gradient(90.7% 560.31% at 95.66% 11.65%, #259f46 0%, #c3f6d7 19.42%, #c3f6d7 89.87%, #a4e473 100%);
+  content: "";
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+.hero-text {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #2d3648 18.2%, #0f6900 45.47%, #a4e473 82.44%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 29rem;
+}

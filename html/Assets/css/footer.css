@@ -1,0 +1,50 @@
+/* ======================================= footer =======================================*/
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: static;
+
+  padding: 56px 71px;
+  margin: 0;
+  width: 100vw;
+
+  background-color: var(--primary-color);
+  height: 333px;
+  color: var(--secondary-color);
+  font: var(--primary-font);
+  font-weight: 700;
+  font-size: 16;
+  bottom: 0;
+  position: relative;
+}
+
+#connect,
+#explore,
+#support,
+#copyright {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#connect .social-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-weight: 500;
+}
+
+#copyright {
+  display: flex;
+  flex-direction: column;
+  gap: 68px;
+  font-weight: 500;
+  color: white;
+}
